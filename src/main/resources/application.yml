@@ -1,0 +1,8 @@
+server:
+  port: 8880
+hbase:
+  config:
+    hbase.zookeeper.quorum: hadoop01,hadoop02,hadoop03
+    hbase.zookeeper.property.clientPort: 2181
+    zookeeper.znode.parent: /hbase
+    hbase.client.keyvalue.maxsize: 1048576000
